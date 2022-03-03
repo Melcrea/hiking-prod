@@ -1,0 +1,23 @@
+.tags-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0 20px 0;
+}
+
+.tags-wrapper .button.customTag {
+  font-size: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.tags-wrapper .button.customTag:hover {
+  background-color: #ecf0f1;
+}
+
+.hiking-details-link {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=override.css.map */
