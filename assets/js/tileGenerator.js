@@ -29,7 +29,6 @@ fetch('./assets/data/hiking.csv')
   .then(response => response.text())
   .then(data => {
     let result = csvToArray(data, delimiter = ";");
-  	console.log(result);
 
     for (let i in result) {
         let item = result[i]
@@ -38,7 +37,6 @@ fetch('./assets/data/hiking.csv')
             $(".panel-copy").first().clone().appendTo("#wrapper");
         }
 
-        console.log(item)
         let currentTile = $(".panel-copy").last()
         currentTile.find(".hiking-title").text(item.name)
         currentTile.find(".hiking-description").text(item.description);

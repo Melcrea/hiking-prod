@@ -14,6 +14,15 @@
 		<link rel="stylesheet" href="assets/css/modal.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="images/icon/icon.jpg">
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8RN0JG58R8"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-8RN0JG58R8');
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -75,7 +84,7 @@
 								</div>
 
 								<div class="image filtered tinted" data-position="top left">
-									<img class="hiking-image" src="images/pic02.jpg" alt="" />
+									<img class="hiking-image" src="" alt="" />
 								</div>
 							</section>
 
@@ -92,25 +101,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/tileGenerator.js"></script>
-			<script>
-
-				var resize = setInterval(function(){chng_iframe_height('framed','header','footer')},500);
-		
-				function chng_iframe_height(ifrid,hid,fid) {
-		
-					var eheight = window.innerHeight;
-					var ifrobj = document.getElementById(ifrid); 
-					var header = document.getElementById(hid); 
-					var footer = document.getElementById(fid); 
-					var header_height = getComputedStyle(header).height;
-					var footer_height = getComputedStyle(footer).height;
-		
-					var reserved_height = parseInt(header_height) + parseInt(footer_height);
-		
-					ifrobj.style.height = eheight - reserved_height +"px";     
-		
-				}
-			</script>
-
 	</body>
 </html>
